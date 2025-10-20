@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AIFinder — Discover AI Tools Fast</title>
+  <meta name="description" content="Discover the best free and paid AI tools fast">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <h1 class="logo">AIFinder</h1>
+      <div class="tag">Discover the best AI tools — free & paid</div>
+    </header>
+
+    <div class="controls">
+      <input id="search" placeholder="Search tools, e.g. 'image', 'writing', 'video'">
+      <div class="categories" id="categories">
+        <button class="cat active" data-cat="all">All</button>
+        <button class="cat" data-cat="writing">Writing</button>
+        <button class="cat" data-cat="images">Images</button>
+        <button class="cat" data-cat="code">Code</button>
+        <button class="cat" data-cat="video">Video</button>
+        <button class="cat" data-cat="productivity">Productivity</button>
+      </div>
+    </div>
+
+    <section id="tools" class="tools-grid" aria-live="polite">
+      <!-- Cards injected by script.js -->
+    </section>
+
+    <div id="no-results" class="no-results" style="display:none">
+      No tools found. Try another search.
+    </div>
+
+    <footer class="site-footer">
+      <div><span id="year"></span> © AIFinder</div>
+      <div class="footer-links">
+        <a href="about.html">About</a> · 
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
